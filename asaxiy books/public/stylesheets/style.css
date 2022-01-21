@@ -1,0 +1,55 @@
+.carousel .carousel-item {
+    width: 800px;
+}
+
+nav {
+    background-color: lightsteelblue;
+}
+
+nav ul li a{
+    color:#007aff ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800px;
+}
+.card-image{
+    overflow: hidden;
+}
+
+.card-image img{
+    transform: scale(1);
+    transition: .9s;
+}
+.card-image img:hover{
+    transform: scale(1.1) ;
+}
+
+form {
+    width: 600px;
+    margin: auto;
+}
+
+.btn {
+    background-color: lightsteelblue;
+}
+
+.btn:hover {
+    background-color: #007aff;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-action{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-action form{
+    width: unset;
+}
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating){
+    color: lightsteelblue;
+}

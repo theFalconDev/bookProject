@@ -1,0 +1,29 @@
+<div class="container">
+    {{#if orders.length}}
+    {{#each orders}}
+    <div class="row">
+        <div class="col s6 offset-s3">
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-title">
+                        Order <small>{{_id}}</small>
+                   </div>
+                   <p class="date">{{date}}</p>
+
+                   <ol>
+                       {{#each books}}
+                       <li>{{book.title}} <strong>{{count}}</strong></li>
+                       {{/each}}
+                   </ol>
+                   <hr>
+                   <p>price <span class="price">{{price}}</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+    {{else}}
+        <p>buldi boshqa qomadi</p>
+    {{/if}}
+
+</div>
